@@ -133,7 +133,7 @@ Venkat~Subramanian\textsuperscript{$\flat$}\\
 \maketitle
 
 \begin{abstract}
-\emph{Ground} is an open-source \emph{data context service}, a system to manage all the peripheral information that informs the use of data. 
+\emph{Ground} is an open-source \emph{data context service}, a system to manage all the information that informs the use of data. 
 Data usage has changed both philosophically and practically in the last decade, creating an opportunity for new data context services to foster further innovation.
 In this paper we frame the challenges of managing data context with basic ABCs: \emph{Applications}, \emph{Behavior}, and \emph{Change}. 
 We provide motivation and design guidelines, present our initial design of a common metamodel and API, and explore the current state of the storage solutions that could serve the needs of a data context service. 
@@ -398,7 +398,7 @@ Finally, it seems natural that some workloads will need to combine these three c
 %, perhaps via a federated query layer above them.  
 As we explore in Section~\ref{sec:perf}, various open-source solutions can address these workloads at some level, but there is significant opportunity for research here.
 
-\smallitem{Identity and Authorization}.  
+\smallitem{Authentication and Authorization}.  
 Identity management and authorization are required for a context service, and must accommodate typical packages like LDAP and Kerberos.  
 Note that authorization needs vary widely: the policies of a scientific consortium will differ from a defense agency or a marketing department.  
 Ground's flexible metamodel can support a variety of relevant metadata (ownership, content labels, etc.) 
