@@ -748,24 +748,24 @@ Ground is an environment not only to collect data context, but to offer it up vi
 \joey{Can we make a case for how the social network will help connect people around data?  That perhaps what and how individuals interact with data will define organizational roles of the future.  Furthermore that data discovery may lead to synergistic collaboration more effectively that traditional organizational boundaries?  Data will define the organizational boundaries of the future ...}
 
 
-\smallitem{Governance and Reproducibility}
+\smallitem{Governance and Reproducibility.}
 Data governance sounds a bit drab, but it is critical to organizations that are regulated or otherwise responsible to data producers---often individual members of society with little technical recourse. Simple assurances like enforcing access control or auditing usage become extremely complex for organizations that deploy networks of complex software across multiple sites and sub-organizations. This is hard for well-intentioned organizations, and opaque for the broader community. Improvements to this state of practice would be welcome on all fronts. To begin, contextual information needs to be easy to capture in a common infrastructure. Ground is an effort to enable that beginning, but there is much more to be done in terms of capturing and authenticating sufficient data lineage for governance---whether in legacy or de~novo systems.
 
 Closer to home in the research community, apparently simple tasks like reproducing purely software-driven experiments prove increasingly difficult.  We of course have to deal with versions of our own software as well as language libraries and operating systems. Virtualization technologies like containers and virtual machines prevent the need to reproduce hardware, but add their own complexities. It is a wide open question how best to knit together all the moving parts of a software environment for reproducibility, even using the latest tools: software version control systems like git, container systems like docker, virtual machines, and orchestration languages like Kubernetes---not to mention versioned metadata and data, for which there are no popular tools yet. We hope Ground can provide a context where these systems can be put together and these issues explored.
 
 \smallitem{Managing Services That Learn.}
-Machine learning powered service from content recommendation to risk management and fraud detection are being widely deployed.
+Services powered by machine learning are being widely deployed, with applications ranging from content recommendation to risk management and fraud detection.
 These services depend critically on up-to-date data to train accurate models.
 Often these data are derived from multiple sources (e.g., click streams, content catalogs, and purchase histories).
-We believe that by connecting commonly used modeling frameworks (e.g., scikit-learn and TensorFlow) to Ground we will be able to better identify the correct data to train models and automatically update models as new data arrives. 
-Furthermore, by registering models directly with Ground, we will be able to identify and track data dependencies and address many of the challenges production machine learning outlined by Sculley et al. in \cite{sculley2}.
+We believe that by connecting commonly used modeling frameworks (e.g., scikit-learn and TensorFlow) to Ground we will be able to helo developers identify the correct data to train models and automatically update models as new data arrives. 
+Furthermore, by registering models directly with Ground, developers will be able to get help tracking and addressing many of the challenges in production machine learning outlined by Sculley et al. in \cite{sculley2}, which focus in large part on dependencies across data, code and configuration files.
 
 
 
 Once deployed, machine learning services are notoriously difficult to manage.  
 An interesting area of future research will be connecting prediction serving platforms (e.g., Velox~\cite{Crankshaw15} and TensorFlow Serving~\cite{tfserving}) to Ground.
 Integration with Ground will enable prediction serving systems to attribute prediction errors to the corresponding training data and improve decision auditing by capturing the context in which decisions were made.
-Furthermore, as prediction services are composed (e.g., genre prediction and content scoring), Ground can provide a broader view of these services and help isolating failing models. 
+Furthermore, as prediction services are composed (e.g., in predicting musical genres and scoring content), Ground can provide a broader view of these services and help isolating failing models. 
 
 
 
