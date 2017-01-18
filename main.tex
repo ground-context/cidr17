@@ -114,9 +114,9 @@ Shirshanka~Das\textsuperscript{$\dagger$},
 Mark~Donsky\textsuperscript{$\ddagger$}, 
 Gabe~Fierro\textsuperscript{*},
 Chang~She\textsuperscript{$\ddagger$},
-Eric~Sun\textsuperscript{$\dagger$}, 
-Carl~Steinbach\textsuperscript{$\dagger$}
-Venkat~Subramanian\textsuperscript{$\flat$}\\
+Carl~Steinbach\textsuperscript{$\dagger$},
+Venkat~Subramanian\textsuperscript{$\flat$},
+Eric~Sun\textsuperscript{$\dagger$}\\
 {\small
 \textsuperscript{*}UC Berkeley,
 \textsuperscript{$\degree$}Trifacta,
@@ -697,8 +697,9 @@ schema-on-use or agility.
 Still, they influenced our thinking and many of their features should be supported by Ground~\cite{loshin2010master}. The Clio project is a good example of research work on this class of 
 schema-centric data integration~\cite{clio}. Much of this work could sit in aboveground application logic and be integrated with other forms of data context.
 
-Meanwhile,
-two emerging metadata systems are addressing governance for the open-source Big Data stack: Cloudera Navigator and the Hortonworks-led Apache Atlas. 
+Closer to our vision are the repository systems explored in the 1990's~\cite{bernstein1994overview}. Those systems were coupled to the programming movements of their time; for example, Microsoft Repository's primary technical goal is to ``fit naturally into Microsoft’s existing object architecture, called the Component Object Model (COM)''~\cite{bernstein1999microsoft}. While our explicit goal here is to avoid prescribing a specific modeling framework, a number of the goals and technical challenges of those efforts presage our discussion here, and it is useful to have those systems as a point of reference.
+
+Two emerging metadata systems are addressing governance for the open-source Big Data stack: Cloudera Navigator and the Hortonworks-led Apache Atlas. 
 Both provide graph models that inspired Common Ground's application context \modelgraph. They are both focused on the specifics of
 running jobs in today's Hadoop stacks, and provide relatively prescriptive metamodels for entities in those stacks. They do not provide versioning or provisions for integration with code repositories, and neither is perceived as vendor-neutral. LinkedIn WhereHows, FINRA Herd and Google Goods~\cite{goods} are metadata services built to support the evolving data workflows in their respective organizations. Goods is a particularly well-documented and mature system, bundling what we call underground services with various proprietary services we might describe as aboveground applications.
 
